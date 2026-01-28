@@ -10,7 +10,7 @@ groceries = float(input("What is the cost of monthly groceries? $"))
 
 transportation = float(input("What is the cost of monthly transportantion? $"))
 
-savings = float(input("How much of your income should you save? $"))
+savings = float(input("How much of your income are you saving? $"))
 
 rent_percentage = (rent/monthly_income)*100
 
