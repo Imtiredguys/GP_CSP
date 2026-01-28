@@ -1,16 +1,16 @@
 #GP, Floats and Integers Part 2; Finanical Calculator 
 
-monthly_income =float(imput("What is your monthly income? $"))
+monthly_income = float(input("What is your monthly income? $"))
 
-rent = float(imput("What is the cost your monthly rent/mortgage? $")
+rent = float(input("What is the cost your monthly rent/mortgage? $"))
 
-utilities = print("What is the cost of your monthly utilities? $")
+utilities = float(input("What is the cost of your monthly utilities? $"))
 
-groceries = print("What is the cost of monthly groceries? $")
+groceries = float(input("What is the cost of monthly groceries? $"))
 
-transportation = print("What is the cost of monthly transportantion? $")
+transportation = float(input("What is the cost of monthly transportantion? $"))
 
-savings = print("How much of your income should you save? $")
+savings = float(input("How much of your income should you save? $"))
 
 rent_percentage = (rent/monthly_income)*100
 
@@ -32,4 +32,6 @@ transportation_cost = (transportation + transportation_percentage)
 
 money_saved = (savings + save_percentage)
 
-monthly_spending = (money_saved + rent_cost + utilities_cost + groceries_cost + transportation_cost)
+monthly_spending = (monthly_income - (money_saved + rent_cost + utilities_cost + groceries_cost + transportation_cost))
+
+print("You have", monthly_spending, "left over for spending!")
