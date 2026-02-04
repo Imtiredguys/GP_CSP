@@ -2,7 +2,7 @@
 
 name = input("Hello what's your name? ").strip().capitalize()
 
-time = int(input("What time is it in military time (ex. 13.35 = 1:35pm)? ")).strip()
+time = int(input("What time is it in military time (ex. 13 = 1pm)? "))
 
 if time >= 9 and time < 11:
     print(f"Good moring {name}!")
