@@ -1,0 +1,44 @@
+# GP & AG, Final Project; Hangman (Period 3)
+import random
+words = ("knights", "tradition", "ancient", "adieu", "wolverine", "vally", "radiance", "vision", "academy", "college", "america", "project", "python", "computer", "science", "principal", "supercalifragilisticexpialidocious", "hippopotomonstrosesquippedaliophobia", "password", "hangman", "arachibutyrophobia", "anatidaephobia", "aibohpphobia", "mellifluous", "words", "apple", "kingdom", "games", "slay", "coding", "pepper", "school", "request", "minor", "major", "joyful", "sadness", "please", "help", "change", "grade", "today", "teamwork", "crazy", "rescue", "book", "necessary", "survival", "lost", "mind", "dance", "drawings", "holiday", "birthday", "halloween", "pumpkin", "possibilities", "middle", "beginning", "speak", "analysis", "announcement", "program", "abracadabra", "democracy", "communism", "understand", "school", "schedule", "analog", "digital", "chance", "gambit", "practice", "house", "learning", "experience", "dictionary", "thesaurus", "email", "statistics", "integer", "float", "focus", "invisible", "monster", "purple", "orange", "yellow", "lavander", "scarlet", "midnight", "blue", "television", "screenager", "generation", "popcorn", "recommend", "opera", "theater", "availible", "smart", "favorite", "clever", "information", "manager", "maximum", "sliver", "knowlegde", "philosophy", "today", "tomorrow", "yesterday", "powerful", "honor", "horror", "pickle", "country", "valentine", "tired", "testing", "january", "febuary", "march", "april", "august")
+#Patterson
+
+hangman_art= {0: ("   ",
+                  "   ",
+                  "   ",), 
+              1: (" O ",
+                  "   ",
+                  "   ",), 
+              2: (" O ",
+                  " | ",
+                  "   ",), 
+              3: (" O ",
+                  " |\ ",
+                  "   ",), 
+              4: (" O ",
+                  "/|\ ",
+                  "   ",), 
+              5: (" O ",
+                  "/|\ ",
+                  "   ",), 
+              6: (" O",
+                  "/|\ ",
+                  "/ \  ",)}
+                  
+def display_man(wrong_guesses):
+    pass
+def display_hint(hint):
+    pass
+def display_answer (answer):
+    pass
+def main():
+    answer = random.choice(words)
+    hint = ["_"] * len(answer)
+    wrong_guesses=0
+    guessed_letters=set()
+    is_running= True
+    
+if __name__=="__main__":
+    main()
+
+#Azalea
