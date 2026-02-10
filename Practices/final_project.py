@@ -56,28 +56,40 @@ hangman_art= {6:"""__
 
 
 #Azalea
-
-guess = input(print("What letter are you guessing? ")).strip().lower()
 answer = random.choice(words)
+word_length = ["_"] * len(answer)
+print(word_length)
+guess = input(print("What letter are you guessing?: ")).strip().lower()
 #Patterson
-if guess is False:
-    print(hangman_art[1])
+hangman_art={0}
+while guess in answer:
+    print(hangman_art)
+hangman_art+=1
+
 #Azalea
 
-print(0)
+guessed_letters = answer
+display = ""
 
 for letter in words:
     print(letter)
-
-if guess in answer:
-    print(0)
-    
+    if guess in guessed_letters:
+        print(guess) in display
+    else:
+        print("_") in display
+        
     
 #Patterson
 
 
 
-"""{0: ("   ",
+"""if guess is False:
+    print(hangman_art[1]) and input(print("Guess another letter: "))
+def display(answer_word, number_of_letters):
+    print("_")
+
+display(answer, )
+{0: ("   ",
                   "   ",
                   "   ",), 
               1: (" O ",
