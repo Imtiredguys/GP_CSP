@@ -62,6 +62,8 @@ wrong=0
 guessed_letters = []
 
 #Azalea
+
+
 answer = random.choice(words)
 
 
@@ -73,19 +75,39 @@ while True:
             display+=guess
         else:
             display+="_"
-        
+    
 
-    print(hangman_art[wrong])
+        if wrong==6:
+            print(hangman_art[wrong])  
+            yes = input("You have lost, start again? type 'yes' to restart: ").strip().lower()
+            if yes != "yes":
+                print("That's the end!")
+                break
+            else:
+                wrong=0
+                guessed_letters=[]
+                answer = random.choice(words)
+
+        if guessed_letters == answer:
+            win=input("Congrats you've won!!! play again? type 'yes' to restart: ").strip().lower()
+            if win != "yes":
+                print("That's the end!")
+                break
+            else:
+                wrong=0
+                guessed_letters=[]
+                answer = random.choice(words)
+
+
+    print(hangman_art[wrong])   
     print(display)
     print(f" So far you've guessed: {guessed_letters}")
     guess = input("What letter are you guessing?: ").strip().lower()
     guessed_letters+=guess
     if guess not in answer:
         wrong+=1
-    elif wrong==6:
-        break and input("You have lost, start again? type 'yes' to restart: ")
-    else:
-        print(f" So far you've guessed: {guessed_letters}")
+
+       
 
 
 
