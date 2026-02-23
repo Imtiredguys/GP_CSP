@@ -1,7 +1,7 @@
 // GP, Variable Notes For C
-#include <stdio.h> // lets us create inputs and outputs
+#include <stdio.h> // lets us create inputs and outputs // YOU MUST HAVE 
 
-int main() { // always has to be inside of a function
+int main() { // always has to be inside of a function // YOU MUST HAVE
     int number = 12; // every statement has to end in a semi collen // must put int, float, or char before variable name
     float pi = 3.14;
     char name[] = "Xavier";
