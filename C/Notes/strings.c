@@ -40,7 +40,7 @@ int main() {
 
     printf("\nThe book is %f. This is a cool book.\n", book);
 
-    // Concatenation in C
+    // Concatenation in C // concatination is used to combine two strings
     char name[] = "Vienna";
     char last[] = "LaRose";
     strcat(name, " ");
