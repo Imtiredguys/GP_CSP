@@ -10,27 +10,29 @@ int main() {
     float transportation;
     float savings;
    
-    printf("How much is your %f? \n", monthly_income);
+    printf("How much is your monthly income? ");
     scanf("%f", &monthly_income);
 
-    printf("How much is your %f? \n", rent);
+    printf("\nHow much is your monthly rent cost? ");
     scanf("%f", &rent);
 
-    printf("How much is your %f? \n", utilities);
+    printf("\nHow much are your monthly utilities cost? ");
     scanf("%f", &utilities);
 
-    printf("How much is your %f? \n", groceries);
+    printf("\nHow much are your monthly groceries cost? ");
     scanf("%f", &groceries);
 
-    printf("How much is your %f? \n", transportation);
+    printf("\nHow much is your monthly transportation cost? ");
     scanf("%f", &transportation);
 
-    printf("What do you want put in savings %f? \n", savings);
+    printf("\nWhat percent of your income do you want put into savings? ");
     scanf("%f", &savings);
     
     int savings_but_like_real_this_time = savings * 100;
     
     float monthly_spending = ("%d", monthly_income - (savings_but_like_real_this_time + rent + utilities + groceries + transportation));
+
+    printf("%f", monthly_income);
 
     return 0;
 }
