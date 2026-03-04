@@ -5,7 +5,7 @@
 int main(){
     //Example 1:
     int grades[] = {74, 88, 95, 87, 98};
-    printf("%d\n", grades[2]);
+    printf("%d\n", grades[2]); // the variable[#] says which items are being used
 
     //Example 2:
     //(how to replacw an item)
