@@ -32,7 +32,7 @@ int main() {
     
     float monthly_spending = ("%d", monthly_income - (savings_but_like_real_this_time + rent + utilities + groceries + transportation));
 
-    printf("%f", monthly_income);
+    printf("\nYou have %.2f dollars left over", monthly_spending);
 
     return 0;
 }
