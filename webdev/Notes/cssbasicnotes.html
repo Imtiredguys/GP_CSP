@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Notes on HTML</title>
+        <meta charset="UTF-8">
+        <!--Embeded CSS goes inside of the head tags using the <style> tag-->
+            <style>
+                *{
+                    background-color: lightblue;
+                    
+                }
+                p{
+                    background-color: bisque;
+                    color: darkolivegreen;
+                    font-size: 1em;
+                }
+                #Ordered-Lists{
+                    background-color: bisque;
+                    color:rgba(66, 130, 189, 0.938);;
+                }
+                .odd{
+                    background-color: rgba(189, 152, 111, 0.699);
+                    color:rgba(66, 130, 189, 0.938);
+                }
+                h1{
+                    text-align: center;
+                    border: 2px solid rgba(189, 152, 111, 0.699);
+                }
+                img{
+                    width: 25%;
+                }
+            </style>
+    </head>
+    <body>
+        <h1>HTML Advanced notes</h1>
+        <!--Inline styles are done in the HTML opening tag, this is a bad practice to use!!!-->
+        <div style="background-color: bisque; height: 50px; width: 500px">
+            <p>Div Content</p>
+        </div>
+        <div id="Ordered-Lists">
+            <p>This is how we make an ordered (numbered) list:</p>
+            <ol>
+                <li class = "odd">English</li>
+                <li>Study Hall</li>
+                <li class = "odd">CSP</li>
+                <li>Advisory</li>
+            </ol>
+        </div>
+        <br>
+        <div id="Unordered-lists">
+            <p>This is an unordered (bulleted) list:</p>
+            <ul style="list-style-type:circle">
+                <li>Apple</li>
+                <li>Brange</li>
+                <li>Banana</li>
+                <li>Grape</li>
+                <li>Blueberry</li>
+            </ul>
+        </div>
+        <br>
+        <a href="https://docs.google.com/document/d/19mAqUUrCODxKbmd7qEPq3RN5eSB7Lnih4hTHGpvRDOQ/edit?tab=t.0" target="_blank">HTML Advanced Notes Google Doc</a>
+        <br>
+        <br>
+        <p>And here is an image of a frog (your welcome):</p>
+        <img src="https://image.shutterstock.com/image-vector/cartoon-frog-vector-illustration-on-260nw-2654943585.jpg" alt="Frog">
+    </body>
+</html>
