@@ -4,10 +4,15 @@
         <title>Advanced Notes on HTML</title>
         <meta charset="UTF-8">
         <!--Embeded CSS goes inside of the head tags using the <style> tag-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
             <style>
-                *{
+                body{
                     background-color: lightblue;
-                    
+                    font-family: "Uncial Antiqua", system-ui;
+                    font-weight: 400;
+                    font-style: normal;
                 }
                 p{
                     background-color: bisque;
@@ -16,7 +21,9 @@
                 }
                 #Ordered-Lists{
                     background-color: bisque;
-                    color:rgba(66, 130, 189, 0.938);;
+                    color:rgba(66, 130, 189, 0.938);
+                    margin-right: 10px;
+                    border: 2px solid bisque;
                 }
                 .odd{
                     background-color: rgba(189, 152, 111, 0.699);
@@ -29,39 +36,79 @@
                 img{
                     width: 25%;
                 }
+                .bolded{
+                    font-weight: bolder;
+                }
+                .image{
+                    font-style: italic;
+                    font-variant: small-caps;
+                }
+                #Unordered-lists{
+                    font-family: Pirata One, system-ui;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .box{
+                    background-color: bisque; 
+                    height: 100px; 
+                    width: 100px;
+                    text-align: center;
+                    font-size: 1em;
+                    margin: 20px;
+                    padding-top: 30px;
+                    
+                }
+                .box-wapper{
+                    display: grid;
+                    justify-content: center;
+                }
+                .list-wapper{
+                    display:grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                .all-images{
+                    display: block;
+                    margin: auto;
+                    width: 50%;
+                }
             </style>
     </head>
     <body>
         <h1>HTML Advanced notes</h1>
         <!--Inline styles are done in the HTML opening tag, this is a bad practice to use!!!-->
-        <div style="background-color: bisque; height: 50px; width: 500px">
-            <p>Div Content</p>
+        <div class="box-wapper">
+            <div class=box>
+                <p>Div Content</p>
+            </div>
         </div>
-        <div id="Ordered-Lists">
-            <p>This is how we make an ordered (numbered) list:</p>
-            <ol>
-                <li class = "odd">English</li>
-                <li>Study Hall</li>
-                <li class = "odd">CSP</li>
-                <li>Advisory</li>
-            </ol>
+        <div class="lists-wapper">
+            <div id="Ordered-Lists">
+                <p>This is how we make an ordered (numbered) list:</p>
+                <ol>
+                    <li class = "odd">English</li>
+                    <li>Study Hall</li>
+                    <li class = "odd">CSP</li>
+                    <li>Advisory</li>
+                </ol>
+            </div>
+            <div id="Unordered-lists">
+                <p>This is an <span id="bolded">unordered (bulleted)</span> list:</p>
+                <ul style="list-style-type:circle">
+                    <li>Apple</li>
+                    <li>Brange</li>
+                    <li>Banana</li>
+                    <li>Grape</li>
+                    <li>Blueberry</li>
+                </ul>
+            </div>
         </div>
         <br>
-        <div id="Unordered-lists">
-            <p>This is an unordered (bulleted) list:</p>
-            <ul style="list-style-type:circle">
-                <li>Apple</li>
-                <li>Brange</li>
-                <li>Banana</li>
-                <li>Grape</li>
-                <li>Blueberry</li>
-            </ul>
+            <a href="https://docs.google.com/document/d/19mAqUUrCODxKbmd7qEPq3RN5eSB7Lnih4hTHGpvRDOQ/edit?tab=t.0" target="_blank">HTML Advanced Notes Google Doc</a>
+            <br>
+            <br>
+            <p class="image">And here is an image of a frog (your welcome):</p>
+        <div class="all-images">
+            <img src="https://image.shutterstock.com/image-vector/cartoon-frog-vector-illustration-on-260nw-2654943585.jpg" alt="Frog">
         </div>
-        <br>
-        <a href="https://docs.google.com/document/d/19mAqUUrCODxKbmd7qEPq3RN5eSB7Lnih4hTHGpvRDOQ/edit?tab=t.0" target="_blank">HTML Advanced Notes Google Doc</a>
-        <br>
-        <br>
-        <p>And here is an image of a frog (your welcome):</p>
-        <img src="https://image.shutterstock.com/image-vector/cartoon-frog-vector-illustration-on-260nw-2654943585.jpg" alt="Frog">
     </body>
 </html>
