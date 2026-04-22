@@ -67,11 +67,18 @@
                     grid-template-columns: 1fr 1fr;
                 }
                 .all-images{
-                    display: block;
+                    display: none;
                     margin: auto;
                     width: 50%;
                 }
             </style>
+            <script>
+                function show(){
+                    document.getElementById("button").innerHTML = "Hide Images"
+                    console.log("button pressed")
+                    documant.getElementById(images).style.display = "block"
+                }
+            </script>
     </head>
     <body>
         <h1>HTML Advanced notes</h1>
@@ -107,7 +114,8 @@
             <br>
             <br>
             <p class="image">And here is an image of a frog (your welcome):</p>
-        <div class="all-images">
+        <button id="button" onclick="show()">Show Images</button>
+        <div class="all-images" id="images">
             <img src="https://image.shutterstock.com/image-vector/cartoon-frog-vector-illustration-on-260nw-2654943585.jpg" alt="Frog">
         </div>
     </body>

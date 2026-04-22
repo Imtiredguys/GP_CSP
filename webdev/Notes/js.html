@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Notes</title>
+        <meta charset="UTF-8">
+        <style>
+            #image{
+                display: none;
+                width: 50%
+            }
+        </style>
+        <script>
+            function change_color(){
+                document.getElementById("change").style.color = "orange"
+            }
+            function show_img(){
+                if(document.getElementById("image").style.display == "block"){
+                    document.getElementById("image").style.display = "none"
+                    document.getElementById("show").innerHTML = "show image"
+                }else{
+                    document.getElementById("image").style.display = "block"
+                    document.getElementById("show").innerHTML = "hide image"
+                }
+            }
+            function hover(){
+                document.getElementById(id).style.backgroundColor = "lightblue"
+                document.getElementById(id).style.color = "white"
+            }
+            //onclick onmousedown onmouseup onmouseenter (or onmouseover) onmouseleave (or onmouseout)
+            function popup(){
+                alert("You should be taking Notes right now")
+            }
+            let images = ["https://m.media-amazon.com/images/I/51i4PF1DMYL._AC_UF1000,1000_QL80_.jpg", "https://m.media-amazon.com/images/I/91WN6a6F3RL._AC_UF1000,1000_QL80_.jpg","https://images.booksense.com/images/477/051/9781368051477.jpg"]
+        </script>
+    </head>
+    <body>
+        <h1 id="change" onmouseover="popup()">JavaScript Notes</h1>
+        <button onclick="change_color()" id="button" onmouseover="hover('botton')" onmouseout="leave('show')">Click Me</button>
+        <button onclick="show_img()" id="show">Show Image</button>
+        <div id="image">
+            <img src = "https://images.booksense.com/images/477/051/9781368051477.jpg" alt = "The Lightning Theif cover 3" class="img">
+        </div>
+    </body>
+</html>
