@@ -51,6 +51,12 @@
             .author{
                 background-color: skyblue;
             }
+            .img3{
+                width: 250px
+            }
+            .tv{
+                border-top: 2px solid rgba(30, 31, 104, 0.514);
+            }
         </style>
         <script>
             function author(){
@@ -61,6 +67,12 @@
                     document.getElementById("info").style.display = "block"
                     document.getElementById("show").innerHTML = "Hide Info"
                 }
+            }
+            function hover(){
+                document.getElementById("trio").src == "https://i.redd.it/yob4rdsq0zn61.png" 
+            }
+            function leave(){
+                document.getElementById("trio").src == "https://i.quotev.com/iwv3wxi634sq.jpg" 
             }
         </script>
     </head>
@@ -104,6 +116,10 @@
                     <li>Battle of the Labyrinth </li>
                     <li>The Last Olympian</li>
                 </ol>
+                <div class="tv">
+                <p>The Percy Jackson and the Olympians series is currently being adpated into a tv by Disney+. The TV show currently has two seasons with a third that recently finshed being filmed.</p>
+                <button id="replace" onmouseover="hover('trio')" onmouseout="leave()"><img src = "https://image.tmdb.org/t/p/original/m2CJO1IFnoem4YEDxq9RdpPKGZT.jpg" alt = "PJO main trio tv show" class="img3" id="trio"></button>
+                </div>
             </div>
             <div clas="column">
                 <h3 class="tlt">The Lightning Thief</h4>
