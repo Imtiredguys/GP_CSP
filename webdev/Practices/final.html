@@ -23,6 +23,7 @@
         }
         .img{
             width: 50%;
+
         }
         .info{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -34,14 +35,53 @@
             font-style: normal;
             font-size: x-large;
         }
+        .button{
+            border: 2px solid rgb(69, 69, 117);
+            background-color: rgb(177, 198, 255);
+            width: 100%;
+            padding: 4px;
+            text-align: left;
+            margin: 10px;
+        }
+        .img2{
+            width: 50%;
+        }
+        .img3{
+            display: none;
+        }
+        #drop-down{
+                display: grid;
+                grid-template-columns: 50% 50%;               
+        }
     </style>
+    <script>
+        function show_img(){
+                if(document.getElementById("image").style.display == "block"){
+                    document.getElementById("image").style.display = "none"
+                    document.getElementById("show").innerHTML = "Show Images"
+                }else{
+                    document.getElementById("image").style.display = "block"
+                    document.getElementById("show").innerHTML = "Hide Images"
+                }
+            }
+    </script>
     <body>
         <h1>Park City Ski Resort</h1>
         <h2>Why Park City?</h2>
-        <p class="info">Park City is the largest ski resort in the entire country, spanning 7,300 arcs.</p>
-        <button>Click Here for Images</button>
-        <def>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg" alt="Park City" class="img">
+        <p class="info">Park City is the largest ski resort in the entire country, spanning 7,300 arcs. There are two sections to Park City: Park City Base Area and Canyons Village.</p>
+        <button onclick="show_img()" id="show" class="button">Click Here for Images</button>
+        <br>
+        <def id="image" class="img3">
+            <div id="drop-down">
+                <div class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg" alt="Park City" class="img">
+                    <img src="https://images.trvl-media.com/place/602285/fcf49c63-cd24-4715-a2d5-0a7622b19467.jpg" alt="Park City img2" class="img2">
+                </div>
+                <div class="column">
+                    <img src="https://scene7.vailresorts.com/is/image/vailresorts/20191204_pc_vanderlinden_017999:Sliding-Cards-AND-Container-Short-Amount?resMode=sharp2&w=390&h=473&wid=187&fit=constrain,1&dpr=on,2.625" alt="Park City img3" class="img">
+                </div>
+            </div>
         </def>
+        <br>
     </body>
 </html>
