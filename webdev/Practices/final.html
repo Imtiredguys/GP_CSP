@@ -54,7 +54,14 @@
         }
         #drop-down{
                 display: grid;
-                grid-template-columns: 50% 50%;               
+                grid-template-columns: 50% 50%;         
+        }
+        #basic{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .img4{
+            width: 200px;
         }
     </style>
     <script>
@@ -67,18 +74,46 @@
                     document.getElementById("show").innerHTML = "Hide Images"
                 }
             }
+            function hover(){
+                document.getElementById("town").src = "https://assets.vogue.com/photos/6939c4af67a68dbfe3c7c4fa/master/w_2560%2Cc_limit/1149062265" 
+            }
+            function leave(){
+                document.getElementById("town").src = "https://media.istockphoto.com/id/175397522/photo/dusk-view-of-park-city-glowing.jpg?s=612x612&w=0&k=20&c=XV1dDU77cKmoHieh1UASiY0ByLONjIOU0KWpsK4xZG8=" 
+            }
     </script>
     <body>
         <h1>Park City Ski Resort</h1>
         <h2>Why Park City?</h2>
         <p class="info">Park City is the largest ski resort in the entire country, spanning 7,300 arcs. There are two sections to Park City: Park City Base Area and Canyons Village.</p>
-        <button onclick="show_img()" id="show" class="button">Click Here for Images</button>
+        <div id="basic">
+            <div class="column">
+                <p>Park City Base Area has 40 different ski lifts, terrain parks, and over 300 runs! Some of the most popular runs include:</p>
+                <ul>
+                    <li>Drift (Green-Easy)</li>
+                    <li>Claim Jumper (Green-Easy)</li>
+                    <li>Georgeanna (Blue-Intermediate)</li>
+                    <li>Sunrise (Blue-Intermediate)</li>
+                    <li>Hidden Splendor (Blue-Intermediate)</li>
+                    <li>Gotcha Cut-Off (Blue-Intermediate)</li>
+                    <li>Molly's (Double Black Diamond-Technical)</li>
+                    <li>P-Zone (Double Black Diamond-Technical)</li>
+                    <li>Constellation (Double Black Diamond-Technical)</li>
+                    <li>Portuguese Gap (Double Black Diamond-Technical)</li>
+                </ul>
+
+            </div>
+            <div class="column">
+                <img src="https://media.istockphoto.com/id/175397522/photo/dusk-view-of-park-city-glowing.jpg?s=612x612&w=0&k=20&c=XV1dDU77cKmoHieh1UASiY0ByLONjIOU0KWpsK4xZG8=" alt="Park City Street" onmouseover="hover()" onmouseout="leave()" class="img4" id="town">
+            </div>
+        </div>
+        <br>
+        <button onclick="show_img()" id="show" class="button">Click Here for More Images</button>
         <br>
         <def id="image" class="img3">
             <div id="drop-down">
                 <div class="column">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg" alt="Park City" class="img">
-                    <img src="https://images.trvl-media.com/place/602285/fcf49c63-cd24-4715-a2d5-0a7622b19467.jpg" alt="Park City img2" class="img2">
+                    <img src="https://images.trvl-media.com/place/602285/fcf49c63-cd24-4715-a2d5-0a7622b19467.jpg" alt="Park City img2" class="img">
                 </div>
                 <div class="column">
                     <img src="https://scene7.vailresorts.com/is/image/vailresorts/20191204_pc_vanderlinden_017999:Sliding-Cards-AND-Container-Short-Amount?resMode=sharp2&w=390&h=473&wid=187&fit=constrain,1&dpr=on,2.625" alt="Park City img3" class="img">
