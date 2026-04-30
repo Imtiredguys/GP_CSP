@@ -22,12 +22,13 @@
             margin-bottom: 50px;
         }
         .img{
-            width: 50%;
+            width: 170px;
 
         }
         .info{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: small;
+            margin-bottom: 30px;
         }
         h2{
             font-family: "Titan One", sans-serif;
@@ -59,9 +60,17 @@
         #basic{
             display: grid;
             grid-template-columns: 50% 50%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            font-size: small;
         }
         .img4{
-            width: 200px;
+            height: 225px;
+        }
+        .column2{
+            margin-inline: 20px;
+        }
+        .img5{
+            height: 193px;
         }
     </style>
     <script>
@@ -84,10 +93,10 @@
     <body>
         <h1>Park City Ski Resort</h1>
         <h2>Why Park City?</h2>
-        <p class="info">Park City is the largest ski resort in the entire country, spanning 7,300 arcs. There are two sections to Park City: Park City Base Area and Canyons Village.</p>
+        <p class="info">Park City is the largest ski resort in the entire country, spanning 7,300 arcs. There are two sections to Park City: Park City Base Area and Canyons Village. In 2002, when the US hosted the Winter Olympics, several events were hosted at Park City. The quality and variety of these slopes will definately pique the interest of any ski/snowboard fans.</p>
         <div id="basic">
-            <div class="column">
-                <p>Park City Base Area has 40 different ski lifts, terrain parks, and over 300 runs! Some of the most popular runs include:</p>
+            <div class="column2">
+                <p><b>Park City Base Area has 40 different ski lifts, terrain parks, and over 300 runs! Some of the most popular runs include:</b></p>
                 <ul>
                     <li>Drift (Green-Easy)</li>
                     <li>Claim Jumper (Green-Easy)</li>
@@ -100,26 +109,39 @@
                     <li>Constellation (Double Black Diamond-Technical)</li>
                     <li>Portuguese Gap (Double Black Diamond-Technical)</li>
                 </ul>
-
+                <button onclick="show_img()" id="show" class="button">Click Here for More Images</button>
+                <br>
+                <def id="image" class="img3">
+                    <div id="drop-down">
+                        <div class="column">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg" alt="Park City" class="img">
+                            <img src="https://images.trvl-media.com/place/602285/fcf49c63-cd24-4715-a2d5-0a7622b19467.jpg" alt="Park City img2" class="img">
+                        </div>
+                        <div class="column">
+                            <img src="https://scene7.vailresorts.com/is/image/vailresorts/20191204_pc_vanderlinden_017999:Sliding-Cards-AND-Container-Short-Amount?resMode=sharp2&w=390&h=473&wid=187&fit=constrain,1&dpr=on,2.625" alt="Park City img3" class="img5">
+                        </div>
+                    </div>
+                </def>
             </div>
-            <div class="column">
+            <div class="column2">
                 <img src="https://media.istockphoto.com/id/175397522/photo/dusk-view-of-park-city-glowing.jpg?s=612x612&w=0&k=20&c=XV1dDU77cKmoHieh1UASiY0ByLONjIOU0KWpsK4xZG8=" alt="Park City Street" onmouseover="hover()" onmouseout="leave()" class="img4" id="town">
+                <br>
+                <p><b>Canyons Village has 21 different ski lifts and over 182 runs. Some of the most popular runs in Canyon Village include:</b></p>
+                <ul>
+                    <li>Ripsaw (Green-Easy)</li>
+                    <li>Chicane (Green-Easy)</li>
+                    <li>Doc's Run (Green-Easy)</li>
+                    <li>Upper Crowning Glory (Blue-Intermediate)</li>
+                    <li>Snow Dancer (Blue-Intermediate)</li>
+                    <li>Power Alley (Blue-Intermediate)</li>
+                    <li>Sandman (Blue-Intermediate)</li>
+                    <li>Chimera (Black Diamond-Technical)</li>
+                    <li>Magic Line (Black Diamond-Technical)</li>
+                    <li>94 Turns (Black Diamond-Technical)</li>
+                    <li>Red Pine Chutes (Black Diamond-Technical)</li>
+                </ul>
+                <br>
             </div>
         </div>
-        <br>
-        <button onclick="show_img()" id="show" class="button">Click Here for More Images</button>
-        <br>
-        <def id="image" class="img3">
-            <div id="drop-down">
-                <div class="column">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg" alt="Park City" class="img">
-                    <img src="https://images.trvl-media.com/place/602285/fcf49c63-cd24-4715-a2d5-0a7622b19467.jpg" alt="Park City img2" class="img">
-                </div>
-                <div class="column">
-                    <img src="https://scene7.vailresorts.com/is/image/vailresorts/20191204_pc_vanderlinden_017999:Sliding-Cards-AND-Container-Short-Amount?resMode=sharp2&w=390&h=473&wid=187&fit=constrain,1&dpr=on,2.625" alt="Park City img3" class="img">
-                </div>
-            </div>
-        </def>
-        <br>
     </body>
 </html>
